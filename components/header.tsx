@@ -18,7 +18,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="hidden md:flex space-x-5 -ml-20">
+          <div className="hidden md:flex space-x-6">
             <a href="#inicio" className="text-gray-700 hover:text-red-600 transition-colors">
               Início
             </a>
@@ -36,7 +36,7 @@ export default function Header() {
             </a>
           </div>
 
-          <Button className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 -ml-20">
+          <Button className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 ml-20">
             Participar
           </Button>
         </nav>
