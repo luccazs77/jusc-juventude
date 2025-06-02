@@ -31,13 +31,11 @@ export default function Header() {
             <a href="#eventos" className="text-gray-700 hover:text-red-600 transition-colors">
               Eventos
             </a>
-            <a href="#contato" className="text-gray-700 hover:text-red-600 transition-colors">
-              Contato
-            </a>
+            
           </div>
 
           <Button className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 ml-20">
-            Participar
+            Entre em contato
           </Button>
         </nav>
       </div>

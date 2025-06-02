@@ -58,7 +58,7 @@ export default function EventsSection() {
             <CardHeader>
               <div className="flex justify-between items-start">
                 <Badge className="bg-red-100 text-red-800">Neste Domingo</Badge>
-                <span className="text-sm text-gray-500">05 Fev</span>
+                <span className="text-sm text-gray-500">07 Jun</span>
               </div>
               <CardTitle className="text-xl">Encontro Domingo</CardTitle>
               <CardDescription>Divulgação do Festejo SCJ na comunidade do SCJ</CardDescription>
