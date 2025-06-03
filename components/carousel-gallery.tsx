@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import React from "react"
 import { Camera } from "lucide-react"
 
@@ -9,40 +10,42 @@ export default function CarouselGallery() {
 
   const slides = [
     {
-      id: 1,
-      title: "Retiro de Verão 2024",
-      description: "Momentos de reflexão e diversão",
-      gradient: "from-red-400 via-red-500 to-red-600",
-    },
+    id: 1,
+    title: "",
+    description: "",
+    image: "/festejojusc.jpeg",
+    position: "center",
+  },
+  {
+    id: 2,
+    title: "",
+    description: "",
+    image: "/fotojusc.jpeg",
+    position: "top",
+  },
     {
-      id: 2,
-      title: "Campanha do Agasalho",
-      description: "Solidariedade em ação",
-      gradient: "from-red-300 via-red-400 to-red-500",
-    },
-    {
-      id: 3,
-      title: "Festival de Talentos",
-      description: "Descobrindo nossos dons",
-      gradient: "from-red-500 via-red-600 to-red-700",
-    },
+  id: 3,
+  title: "",
+  description: "",
+  image: "/juscfoto.jpeg",
+},
     {
       id: 4,
-      title: "Visita ao Orfanato",
-      description: "Levando alegria e carinho",
-      gradient: "from-red-400 via-red-500 to-pink-500",
+      title: "",
+      description: "",
+      image: "/missaljusc.jpeg",
     },
     {
       id: 5,
-      title: "Acampamento de Liderança",
-      description: "Formando novos líderes",
-      gradient: "from-red-600 via-red-700 to-red-800",
+      title: "",
+      description: "",
+      image: "/terçojusc.jpeg",
     },
     {
       id: 6,
-      title: "Dia da Amizade",
-      description: "Celebrando nossa união",
-      gradient: "from-pink-400 via-red-500 to-red-600",
+      title: "",
+      description: "",
+      image: "/festejojusc.jpeg",
     },
   ]
 
@@ -58,7 +61,6 @@ export default function CarouselGallery() {
     setCurrentSlide(index)
   }
 
-  // Auto-play functionality
   React.useEffect(() => {
     if (!isAutoPlaying) return
 
@@ -77,7 +79,6 @@ export default function CarouselGallery() {
     >
       {/* Main Carousel Container */}
       <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-        {/* Slides */}
         <div className="relative w-full h-full">
           {slides.map((slide, index) => (
             <div
@@ -90,30 +91,22 @@ export default function CarouselGallery() {
                     : "translate-x-full opacity-0 scale-95"
               }`}
             >
-              <div className={`w-full h-full bg-gradient-to-br ${slide.gradient} relative overflow-hidden`}>
-                {/* Animated Background Pattern */}
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full animate-pulse"></div>
-                  <div className="absolute top-32 right-20 w-24 h-24 bg-white rounded-full animate-bounce delay-300"></div>
-                  <div className="absolute bottom-20 left-32 w-20 h-20 bg-white rounded-full animate-ping delay-700"></div>
-                  <div className="absolute bottom-32 right-10 w-28 h-28 bg-white rounded-full animate-pulse delay-1000"></div>
-                </div>
+              <div className="w-full h-full relative overflow-hidden">
+               <Image
+                src={slide.image}
+                alt={slide.title}
+                fill
+               className="object-contain"
+                priority={index === currentSlide}
+              />
+                <div className="absolute inset-0 bg-black/40" />
 
                 {/* Content */}
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center p-8">
-                  <div className="mb-6 transform hover:scale-110 transition-transform duration-300">
-                    <Camera className="h-16 w-16 md:h-24 md:w-24 mx-auto mb-4 animate-bounce" />
-                  </div>
-                  <h3 className="text-2xl md:text-4xl font-bold mb-4 animate-fade-in-up">{slide.title}</h3>
-                  <p className="text-lg md:text-xl opacity-90 animate-fade-in-up delay-300">{slide.description}</p>
-
-                  {/* Floating Elements */}
-                  <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full animate-ping delay-500"></div>
-                  <div className="absolute top-3/4 right-1/4 w-3 h-3 bg-white rounded-full animate-pulse delay-1000"></div>
+                  
+                  <h3 className="text-2xl md:text-4xl font-bold mb-4">{slide.title}</h3>
+                  <p className="text-lg md:text-xl opacity-90">{slide.description}</p>
                 </div>
-
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-black/20"></div>
               </div>
             </div>
           ))}
@@ -177,11 +170,14 @@ export default function CarouselGallery() {
               index === currentSlide ? "ring-4 ring-red-500 scale-105 shadow-lg" : "hover:ring-2 hover:ring-red-300"
             }`}
           >
-            <div className={`w-full h-full bg-gradient-to-br ${slide.gradient} flex items-center justify-center`}>
-              <Camera className="h-6 w-6 text-white" />
-            </div>
-            <div className="absolute inset-0 bg-black/20"></div>
-            {index === currentSlide && <div className="absolute inset-0 bg-white/20 animate-pulse"></div>}
+            <Image
+              src={slide.image}
+              alt={slide.title}
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20" />
+            {index === currentSlide && <div className="absolute inset-0 bg-white/20 animate-pulse" />}
           </button>
         ))}
       </div>
@@ -191,7 +187,7 @@ export default function CarouselGallery() {
         <div
           className="h-full bg-gradient-to-r from-red-500 to-red-700 rounded-full transition-all duration-300 ease-out"
           style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }}
-        ></div>
+        />
       </div>
     </div>
   )

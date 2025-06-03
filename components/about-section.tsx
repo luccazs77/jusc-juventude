@@ -9,7 +9,7 @@ export default function AboutSection() {
           <h2 className="text-4xl font-bold mb-4 text-gray-800">Sobre o JUSC</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Somos mais que um grupo - somos uma família unida por valores comuns e o desejo de impactar positivamente
-            nossa comunidade.
+            nossa comunidade e nossa paróquia.
           </p>
         </div>
 
