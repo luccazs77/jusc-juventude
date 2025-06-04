@@ -63,6 +63,9 @@ export default function Header() {
             <a href="#eventos" className="text-gray-700 hover:text-red-600 transition-colors">
               Eventos
             </a>
+            <a href="#eventos" className="text-gray-700 hover:text-red-600 transition-colors">
+              Eventos
+            </a>
           </div>
         )}
       </div>
