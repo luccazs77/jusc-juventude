@@ -20,13 +20,12 @@ export default function ActivitiesSection() {
             <CardHeader>
               <CardTitle className="text-lg flex items-center justify-center">
                 <Heart className="mr-2 h-5 w-5 text-red-500" />
-                Ação Social
+                Atividades em Missão
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 text-sm text-center">
-                Campanhas de doação, visitas a asilos e orfanatos, distribuição
-                de alimentos.
+                Visitas nas famílias, picnic e outras...
               </p>
             </CardContent>
           </Card>

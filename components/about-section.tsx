@@ -23,7 +23,7 @@ export default function AboutSection() {
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-gray-600">
-               Unir os jovens sem deixar apagar a chama do Espirito Santo nos seus corações,atraés de atividades que promova espiritual e comunitário.
+              Unir os jovens sem deixar apagar a chama do Espírito Santo em seus corações, através de atividades que promovam seu crescimento pessoal, espiritual e comunitário.
               </p>
             </CardContent>
           </Card>
