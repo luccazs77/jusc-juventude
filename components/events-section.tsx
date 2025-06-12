@@ -45,33 +45,7 @@ export default function EventsSection() {
   }, [slider]);
 
   const events = [
-    {
-      badge: "Neste Sábado",
-      badgeColor: "bg-red-100 text-red-700",
-      date: "06 Jun",
-      title: "Encontro Sábado",
-      description: "Divulgação do Festejo SCJ na comunidade de Aparecida",
-      time: "Sábado, 19h às 21h",
-      location: "Comunidade de Aparecida",
-    },
-    {
-      badge: "Neste Domingo",
-      badgeColor: "bg-red-100 text-red-600",
-      date: "07 Jun",
-      title: "Encontro Domingo",
-      description: "Divulgação do Festejo SCJ na comunidade do Bonfim",
-      time: "Domingo, 07h às 09h",
-      location: "Comunidade do Bonfim",
-    },
-    {
-      badge: "Neste Domingo",
-      badgeColor: "bg-red-100 text-red-800",
-      date: "07 Jun",
-      title: "Encontro Domingo",
-      description: "Divulgação do Festejo SCJ na comunidade do SCJ",
-      time: "Domingo, 19h às 20h",
-      location: "Comunidade do Sagrado Coração de Jesus",
-    },
+    
     {
       badge: "Sábado",
       badgeColor: "bg-blue-100 text-blue-700",

@@ -8,7 +8,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white/80 backdrop-blur-md border-b sticky top-0 z-50">
+    <header className="bg-white/80 backdrop-blur-md border-b">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between h-16 relative">
           {/* Logo centralizada no mobile */}
@@ -59,9 +59,6 @@ export default function Header() {
             </a>
             <a href="#atividades" className="text-gray-700 hover:text-red-600 transition-colors">
               Atividades
-            </a>
-            <a href="#eventos" className="text-gray-700 hover:text-red-600 transition-colors">
-              Eventos
             </a>
             <a href="#eventos" className="text-gray-700 hover:text-red-600 transition-colors">
               Eventos
