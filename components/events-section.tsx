@@ -73,6 +73,15 @@ export default function EventsSection() {
       time: "Sexta, 19h às 21h",
       location: "Comunidade do Sagrado Coração de Jesus",
     },
+    {
+      badge: "Sexta",
+      badgeColor: "bg-blue-100 text-blue-700",
+      date: "20 Jun",
+      title: "Missa Sagrado Coração de Jesus",
+      description: "Festejo do Sagrado Coração de Jesus.",
+      time: "Sexta, 19h às 21h",
+      location: "Comunidade do Sagrado Coração de Jesus",
+    },
   ];
 
   return (
