@@ -13,7 +13,7 @@ export default function CarouselGallery() {
     id: 1,
     title: "",
     description: "",
-    image: "/festejojusc.jpeg",
+    image: "/chadebb.jpeg",
     position: "center",
   },
   {
