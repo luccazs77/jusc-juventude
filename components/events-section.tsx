@@ -51,7 +51,7 @@ export default function EventsSection() {
       date: "2025-06-20",
       title: "Missa de abertura do festejo do  Sagrado Coração de Jesus",
       description: "Festejo do Sagrado Coração de Jesus, PE: Antonio Elton",
-      time: "Sexta, 19h às 21h",
+      time: "Sexta, 19h",
       location: "Comunidade do Sagrado Coração de Jesus",
     },
      {
@@ -60,7 +60,7 @@ export default function EventsSection() {
       date: "2025-06-21",
       title: "2ª Noite do festejo do Sagrado Coração de Jesus",
       description: "Noite da Juventude, Convidados: COM-São Raimundo, DIAC: Márcio Franco",
-      time: "Sexta, 19h às 21h",
+      time: "Sexta, 19h",
       location: "Comunidade do Sagrado Coração de Jesus",
     },
     {
@@ -69,7 +69,7 @@ export default function EventsSection() {
       date: "2025-06-22",
       title: "3ª Noite do festejo do Sagrado Coração de Jesus",
       description: "Noite do Dízimo, Convidados: COM-São Vicente de Paulo, PE: Garcia",
-      time: "Sexta, 19h às 21h",
+      time: "Sexta, 19h",
       location: "Comunidade do Sagrado Coração de Jesus",
     },
     {
@@ -78,7 +78,7 @@ export default function EventsSection() {
       date: "2025-06-23",
       title: "4ª Noite do festejo do Sagrado Coração de Jesus",
       description: "Noite da Liturgia, Convidados: COM-N.S De Fátima, PE: Alberto",
-      time: "Sexta, 19h às 21h",
+      time: "Sexta, 19h",
       location: "Comunidade do Sagrado Coração de Jesus",
     },
      {
@@ -87,7 +87,7 @@ export default function EventsSection() {
       date: "2025-06-24",
       title: "5ª Noite do festejo do Sagrado Coração de Jesus",
       description: "Noite da Catequese e Batismo, Convidados: COM-S.José do Bonfim, DIAC: Joelson Mineiro",
-      time: "Sexta, 19h às 21h",
+      time: "Sexta, 19h",
       location: "Comunidade do Sagrado Coração de Jesus",
     },
     {
@@ -96,7 +96,7 @@ export default function EventsSection() {
       date: "2025-06-25",
       title: "6ª Noite do festejo do Sagrado Coração de Jesus",
       description: "Noite da Pastoral Familiar, Convidados: COM-São Benedito, PE: Paulo",
-      time: "Sexta, 19h às 21h",
+      time: "Sexta, 19h",
       location: "Comunidade do Sagrado Coração de Jesus",
     },
   ];
