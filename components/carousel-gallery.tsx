@@ -20,32 +20,32 @@ export default function CarouselGallery() {
     id: 2,
     title: "",
     description: "",
-    image: "/fotojusc.jpeg",
+    image: "/foto-no-festejo.jpeg",
     position: "top",
   },
     {
   id: 3,
   title: "",
   description: "",
-  image: "/juscfoto.jpeg",
+  image: "/foto-final-da-missa.jpg",
 },
     {
       id: 4,
       title: "",
       description: "",
-      image: "/missaljusc.jpeg",
+      image: "/foto-da-missa.jpg",
     },
     {
       id: 5,
       title: "",
       description: "",
-      image: "/terçojusc.jpeg",
+      image: "/foto-com-camisa.jpg",
     },
     {
       id: 6,
       title: "",
       description: "",
-      image: "/festejojusc.jpeg",
+      image: "/foto-com-camisa-de-costa.jpeg",
     },
   ]
 
