@@ -18,7 +18,7 @@ export default function EventsSection() {
   const sliderRef = useRef(null);
 
   const [sliderInstanceRef, slider] = useKeenSlider<HTMLDivElement>({
-    loop: true,
+    loop: false,
     mode: "snap",
     slides: {
       perView: 1,
@@ -39,66 +39,42 @@ export default function EventsSection() {
     if (slider.current) {
       interval = setInterval(() => {
         slider.current?.next();
-      }, 5000); // gira a cada 5 segundos
+      },5000); // gira a cada 5 segundos
     }
     return () => clearInterval(interval);
   }, [slider]);
 
   const events = [
-    {
-      badge: "Sexta",
-      badgeColor: "bg-blue-100 text-blue-700",
-      date: "2025-06-20",
-      title: "Missa de abertura do festejo do  Sagrado Coração de Jesus",
-      description: "Festejo do Sagrado Coração de Jesus, PE: Antonio Elton",
-      time: "Sexta, 19h",
-      location: "Comunidade do Sagrado Coração de Jesus",
-    },
      {
-      badge: "Sabado",
+      badge: "Sábado",
       badgeColor: "bg-blue-100 text-blue-700",
-      date: "2025-06-21",
-      title: "2ª Noite do festejo do Sagrado Coração de Jesus",
-      description: "Noite da Juventude, Convidados: COM-São Raimundo, DIAC: Márcio Franco",
-      time: "Sexta, 19h",
-      location: "Comunidade do Sagrado Coração de Jesus",
+      date: "2025-10-25",
+      title: "Encontro JUSC",
+      description: "Encontro do JUSC com atividades e dinâmicas.",
+      time: "Sábado, 19h",
+      location: "Sagrado Coração de Jesus",
     },
+
     {
       badge: "Domingo",
       badgeColor: "bg-blue-100 text-blue-700",
-      date: "2025-06-22",
-      title: "3ª Noite do festejo do Sagrado Coração de Jesus",
-      description: "Noite do Dízimo, Convidados: COM-São Vicente de Paulo, PE: Garcia",
-      time: "Sexta, 19h",
-      location: "Comunidade do Sagrado Coração de Jesus",
+      date: "2025-10-26",
+      title: "DNJ 2025 - Dia Nacional da Juventude",
+      description: "Dia Nacional da Juventude (Peregrinos de Esperança).",
+      time: "Domingo, 15h",
+      location: "Santuário de Nazaré - Cohatrac I",
     },
-    {
-      badge: "Segunda",
-      badgeColor: "bg-blue-100 text-blue-700",
-      date: "2025-06-23",
-      title: "4ª Noite do festejo do Sagrado Coração de Jesus",
-      description: "Noite da Liturgia, Convidados: COM-N.S De Fátima, PE: Alberto",
-      time: "Sexta, 19h",
-      location: "Comunidade do Sagrado Coração de Jesus",
-    },
+
      {
-      badge: "Terça",
+      badge: "Domingo",
       badgeColor: "bg-blue-100 text-blue-700",
-      date: "2025-06-24",
-      title: "5ª Noite do festejo do Sagrado Coração de Jesus",
-      description: "Noite da Catequese e Batismo, Convidados: COM-S.José do Bonfim, DIAC: Joelson Mineiro",
-      time: "Sexta, 19h",
-      location: "Comunidade do Sagrado Coração de Jesus",
+      date: "2025-10-26",
+      title: "Missa Comunidade Sagrado Coração de Jesus",
+      description: "Missa na Comunidade Sagrado Coração de Jesus.",
+      time: "Domingo, 19h30",
+      location: "Sagrado Coração de Jesus",
     },
-    {
-      badge: "Quarta",
-      badgeColor: "bg-blue-100 text-blue-700",
-      date: "2025-06-25",
-      title: "6ª Noite do festejo do Sagrado Coração de Jesus",
-      description: "Noite da Pastoral Familiar, Convidados: COM-São Benedito, PE: Paulo",
-      time: "Sexta, 19h",
-      location: "Comunidade do Sagrado Coração de Jesus",
-    },
+     
   ];
 
   // Filtra eventos que ainda não passaram

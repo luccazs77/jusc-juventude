@@ -54,8 +54,7 @@ export default function ActivitiesSection() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 text-sm text-center">
-                Missas, espiritualidade, adoração, louvor, Encontrão da
-                Juventude e outros eventos comunitários.
+               DNJ 2025 - Dia Nacional da Juventude
               </p>
             </CardContent>
           </Card>
